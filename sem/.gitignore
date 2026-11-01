@@ -1,0 +1,7 @@
+# Local inputs and generated outputs must not be uploaded with this module.
+data/
+outputs/
+__pycache__/
+*.pyc
+*.RData
+*.Rhistory
