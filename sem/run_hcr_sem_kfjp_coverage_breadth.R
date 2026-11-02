@@ -8,7 +8,7 @@ if (length(args) > 2) stop("Usage: Rscript sem/run_hcr_sem_kfjp_coverage_breadth
 base <- Sys.getenv("KFJP_SEM_BASE", unset = file.path("sem", "data"))
 source_data <- if (length(args) >= 1) args[[1]] else file.path(base, "DATA", "KFJP_superiority_tests", "kfjp_indicator_test_dataset.csv")
 out_dir <- if (length(args) >= 2) args[[2]] else file.path("sem", "outputs")
-if (!file.exists(source_data)) stop("Input CSV not found: ", source_data, ". See sem/README.md for required inputs.")
+if (!file.exists(source_data)) stop("Input CSV not found: ", source_data, ". Supply the analysis CSV as the first argument or set KFJP_SEM_BASE.")
 dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 
 sem_data <- read_csv(source_data, show_col_types = FALSE) %>%
