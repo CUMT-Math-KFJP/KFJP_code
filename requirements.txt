@@ -1,0 +1,9 @@
+numpy
+pandas
+torch
+torchdiffeq
+tqdm
+openpyxl
+
+# R dependencies (install separately in R):
+# piecewiseSEM, tidyverse, ggplot2, patchwork
